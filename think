@@ -5,7 +5,16 @@ namespace think;
 
 // 命令行入口文件
 // 加载基础文件
+use app\init\InitMigrate;
+
 require __DIR__ . '/vendor/autoload.php';
+
+
+try {
+    InitMigrate::init();
+} catch (\Exception $e) {
+    dump($e);
+}
 
 // 应用初始化
 (new App())->console->run();

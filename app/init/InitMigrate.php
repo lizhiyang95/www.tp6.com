@@ -2,21 +2,18 @@
 
 namespace app\init;
 
-use think\App;
+use think\facade\Console;
 
 class InitMigrate
 {
     public static function init()
     {
-        $dir = (new App())->getRootPath();
-//        $res = exec("php {$dir}think migrate:run");
-//        $res = shell_exec("date");
-
-        echo "开始";
-        $cmd = " php {$dir}think migrate:run";
-        echo $cmd;
-//        $res = shell_exec($cmd);
-//        echo $res;
-//        echo self::class . "初始化结果" . $res;
+        try {// 执行数据库迁移命令
+            echo "数据库初始化开始" . PHP_EOL;
+            Console::call('migrate:run');
+            echo "数据库初始化成功" . PHP_EOL;
+        } catch (\Exception $e) {
+            echo "数据库初始化失败" . $e->getMessage() . PHP_EOL;
+        }
     }
 }

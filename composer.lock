@@ -679,20 +679,26 @@
         },
         {
             "name": "topthink/think-migration",
-            "version": "v3.0.6",
+            "version": "v3.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/top-think/think-migration.git",
-                "reference": "82c4226cb14f973b9377c7fc6e89c525cbb8b030"
+                "reference": "7a5ec3952ea97bf1a5d8872e1bd10f2abf6294ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/top-think/think-migration/zipball/82c4226cb14f973b9377c7fc6e89c525cbb8b030",
-                "reference": "82c4226cb14f973b9377c7fc6e89c525cbb8b030",
-                "shasum": ""
+                "url": "https://api.github.com/repos/top-think/think-migration/zipball/7a5ec3952ea97bf1a5d8872e1bd10f2abf6294ca",
+                "reference": "7a5ec3952ea97bf1a5d8872e1bd10f2abf6294ca",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
-                "topthink/framework": "^6.0 || ^8.0",
+                "topthink/framework": "^6.0",
                 "topthink/think-helper": "^3.0.3"
             },
             "require-dev": {
@@ -727,9 +733,9 @@
             ],
             "support": {
                 "issues": "https://github.com/top-think/think-migration/issues",
-                "source": "https://github.com/top-think/think-migration/tree/v3.0.6"
+                "source": "https://github.com/top-think/think-migration/tree/v3.0.5"
             },
-            "time": "2023-07-01T11:01:52+00:00"
+            "time": "2023-02-26T13:16:22+00:00"
         },
         {
             "name": "topthink/think-orm",
